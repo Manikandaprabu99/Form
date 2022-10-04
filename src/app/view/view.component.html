@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="forms">
+      <div class="col"  *ngFor = "let form of forms">
+        <div class="card h-100" style="max-width: 560px;">
+
+<div class="card-body">
+<h4 class="card-title" >Name:{{ form.name }}</h4>
+<h4 class="card-title">MobileNumber:{{ form.mobileNumber }}</h4>
+<h4 class="card-title" >Gender:{{ form.gender }}</h4>
+<h4 class="card-title" >Course:{{ form.course }}</h4>
+
+</div>
+</div>
+</div>
+</div>
+</div>

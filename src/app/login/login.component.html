@@ -1,0 +1,38 @@
+<div class="container">
+
+   
+    
+        <form class="p-3 rounded-3" [formGroup]="loginForm" (ngSubmit)="loginSubmitted()">
+          <div class="row g-0">
+            <div class="col text-center p-2 mb-3 bg-light">
+              <h2 class="fs-3">Welcome Back</h2>
+            </div>
+          </div>
+        
+              <div class="row">
+                <div class="col mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" formControlName="email">
+                </div>
+              </div>
+                
+              <div class="row">
+                <div class="col mb-3">
+                  <label for="pwd" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="pwd" formControlName="pwd">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="d-grid">
+                  <button type="submit" [disabled]="loginForm.invalid"  class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+
+           <!-- <p class="mt-20">New in this site ?<a  href="signup"> Create New Account</a></p> -->
+                </form>
+
+            
+  </div>
